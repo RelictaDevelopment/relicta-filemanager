@@ -22,7 +22,28 @@
             ]
         },
     },
+    "scripts": {
+    "post-install-cmd": [
+        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+        "php artisan key:generate",
+        "php artisan migrate",
+        "php artisan vendor:publish --tag=laravel-assets",
+        "php artisan vendor:publish --tag=laravel-config",
+        "php artisan vendor:publish --tag=laravel-migrations",
+        "php artisan vendor:publish --tag=laravel-views",
+        "php artisan ui bootstrap --auth"
+    ],
+    "post-update-cmd": [
+        "php artisan migrate"
+    ]
+},
     "require": {
-        "php": "8.*"
+        "php": "8.*",
+        "laravel/jetstream": "^2.4",
+        "laravel/ui": "^2.4",
+        "laravel/jetstream-teams": "^1.3",
+        "laravel/sanctum": "^2.10",
+        "bootstrap": "^5.0",
+        "popper.js": "^2.11"
     }
 }
