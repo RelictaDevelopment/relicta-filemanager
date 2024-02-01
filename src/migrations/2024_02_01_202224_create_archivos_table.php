@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('archivos', function (Blueprint $table) {
             $table->id();
             $table->string('file-id');
-            $table->string('filename'),
+            $table->string('filename');
+            $table->string('email');
+            $table->foreign('email')->references('email')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
