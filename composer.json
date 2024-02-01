@@ -1,0 +1,28 @@
+{
+    "name": "relictadev/relicta-filemanager",
+    "description": "Administrador de Archivos de desarrollo porpio de Relicta Development",
+    "type": "library",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Relicta Development",
+            "email": "i.arcos@relictadev.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "relicta-filemanager" : "src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "relicta-filemanager\\RelictaFilemanagerServiceProvider"
+            ]
+        },
+    },
+    "require": {
+        "php": "8.*"
+    }
+}
