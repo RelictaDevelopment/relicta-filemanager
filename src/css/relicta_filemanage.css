@@ -13,9 +13,20 @@
 }
 
 .relicta-file-5 {
-    width: 20%;
-    height: 100px;
+
+    margin: 1%;
+    width: 10vh;
+    height: 14vh;
+
 }
+.rel_filename{
+    text-align: center;
+}
+.relicta-file-5:hover{
+    background: #a0aec0;
+}.relicta-file-5:current{
+     background: darkseagreen;
+ }
 
 .relicta-filemanager-head {
     width: 100%;
@@ -104,3 +115,17 @@
 .rel_filemanager_icon:hover {
     background: #e2e8f0;
 }
+.rel_file_error {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/8263/8263287.png');
+    background-size: contain;
+    /* Ajusta el tamaño para que la imagen se ajuste dentro del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita si su tamaño es menor que el contenedor */
+
+    width: 10vh;
+    height: 10vh;
+    /* Ancho del contenedor */
+
+    /* Altura del contenedor */
+}
+
