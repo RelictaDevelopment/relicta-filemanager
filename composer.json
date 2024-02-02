@@ -20,7 +20,7 @@
             "providers":[
                 "relicta-filemanager\\RelictaFilemanagerServiceProvider"
             ]
-        },
+        }
     },
     "scripts": {
     "post-install-cmd": [
