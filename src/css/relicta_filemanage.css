@@ -1,5 +1,33 @@
 .relicta-col-4{
     width: 33.33%;
+
+    border: #1a202c 1px solid;
+    position: relative;
+    flex: auto;
+
 }.relicta-col-8{
-     width: 66.67%;
+     width: 66.66%;
+     border: #1a202c 1px solid;
+     position: relative;
+     flex: auto;
+ }.relicta-file-5{
+      width: 20%;
+      height: 100px;
+  }
+.relicta-filemanager-head{
+    width: 100%;
+    height: auto;
+    background: #4a5568;
+    position: relative;
+}
+.relicta-container{
+    width: 85%;
+}
+.relicta-folder-filesystem{
+    align-content: flex-end;
+    width: 100%;
+    text-justify: auto;
+
+}.relicta-folder-filesystem:hover{
+     background: #cbd5e0;
  }
