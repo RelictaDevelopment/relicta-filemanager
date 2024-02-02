@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,36 +7,46 @@
     <!-- Agrega los enlaces a los estilos de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Agrega tu archivo de estilos personalizados si es necesario -->
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/resources/css/relicta_filemanage.css">
 </head>
 <body>
-<div class="container mt-4">
+<div class="container-fluid mt-4 relicta-container">
     <div class="row">
-        <!-- Columna de carpetas y subcarpetas -->
-        <div class="col-md-4">
-            <!-- Puedes personalizar la apariencia de la barra superior según tus necesidades -->
-            <div class="bg-info p-2 mb-2">
-                <!-- Contenido de la barra superior -->
+        <div class="relicta-filemanager-head d-flex justify-content-end ">
+
+            <div class="rel_filemanager_icon">
+                <div class="rel_delete"></div>
             </div>
-            <!-- Lista de carpetas y subcarpetas -->
-            <ul class="list-group">
-                <li class="list-group-item">Carpeta 1</li>
-                <li class="list-group-item">Carpeta 2</li>
-                <!-- Agrega dinámicamente las carpetas/subcarpetas según la lógica de tu aplicación -->
-            </ul>
+
+            <div class="rel_filemanager_icon">
+                <div class="rel_new_folder"></div>
+            </div>
+
+            <div class="rel_filemanager_icon">
+                <div class="rel_download"></div>
+            </div>
+
+            <div class="rel_filemanager_icon">
+                <div class="rel_file_info"></div>
+            </div>
+        </div>
+        <!-- Columna de carpetas y subcarpetas -->
+        <div class="relicta-col-4">
+            <!-- Puedes personalizar la apariencia de la barra superior según tus necesidades -->
+
+            <!-- Lista de carpetas y subcarpetas (se cargará dinámicamente) -->
+            <div class="relicta-folder-filesystem d-flex">
+                <div class="rel_folder"> </div>
+                <div class="relicta-filemanager-text"> Hello </div>
+
+            </div>
         </div>
         <!-- Columna de archivos -->
-        <div class="col-md-8">
-            <!-- Puedes personalizar la apariencia de la barra superior según tus necesidades -->
-            <div class="bg-info p-2 mb-2">
-                <!-- Contenido de la barra superior -->
+        <div id="contenidoArchivos" class="relicta-col-8" style="overflow-y: auto; height: 500px;">
+            <!-- Contenido de la carpeta actual (se cargará dinámicamente) -->
+            <div class="relicta-file-5">
+
             </div>
-            <!-- Lista de archivos -->
-            <ul class="list-group">
-                <li class="list-group-item">Archivo 1</li>
-                <li class="list-group-item">Archivo 2</li>
-                <!-- Agrega dinámicamente los archivos según la lógica de tu aplicación -->
-            </ul>
         </div>
     </div>
 </div>
