@@ -8,6 +8,9 @@
   },
   "author": "RelictaDevelopment",
   "license": "MIT",
+  "publishConfig": {
+  "@IgnacioRelictaSoftwares:registry": "https://npm.pkg.github.com"
+}
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RelictaDevelopment/relicta-filemanager.git"
