@@ -1,0 +1,19 @@
+{
+  "name": "relicta-filemanager",
+  "version": "1.0.0",
+  "description": "FileManager developed by Relicta Development for Laravel 8+",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "RelictaDevelopment",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RelictaDevelopment/relicta-filemanager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RelictaDevelopment/relicta-filemanager/issues"
+  },
+  "homepage": "https://github.com/RelictaDevelopment/relicta-filemanager#readme"
+}
