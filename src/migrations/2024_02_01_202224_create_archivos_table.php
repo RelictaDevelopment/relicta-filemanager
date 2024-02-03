@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('filename');
             $table->string('email');
             $table->foreign('email')->references('email')->on('users')->onDelete('cascade');
+            $table->string('filePath');
+            $table->string('fileType');
             $table->timestamps();
         });
     }
