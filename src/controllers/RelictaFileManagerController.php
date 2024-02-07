@@ -65,4 +65,28 @@ class RelictaFileManagerController extends Controller
             return $fileSize . ' bytes';
         }
     }
+
+    public function getFilename(Request $request){
+        $fileId = $request->input('file-id');
+        $fileInfo = Archivo::where('file-id', $fileId)->first();
+        $fileName = $fileInfo->filename;
+        return $fileName;
+    }
+
+
+    public function getFilePath(Request $request){
+        $fileId = $request->input('file_id');
+        $fileInfo = Archivo::where('file_id', $fileId)->first();
+        $filePath = $fileInfo->file_path;
+
+        return $filePath;
+    }
+
+    public function getEmail(Request $request){
+        $fileId = $request->input('file_id');
+        $fileInfo = Archivo::where('file_id', $fileId)->first();
+        $email = $fileInfo->email;
+
+        return $email;
+    }
 }
