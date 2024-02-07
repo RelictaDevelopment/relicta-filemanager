@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('archivos', function (Blueprint $table) {
-            $table->id();
-            $table->string('file-id');
+            $table->string('file_id')->unique();
             $table->string('filename');
             $table->string('email');
             $table->foreign('email')->references('email')->on('users')->onDelete('cascade');
-            $table->string('filePath');
-            $table->string('fileType');
+            $table->string('file_path');
+            $table->string('file_type');
+            $table->bigInteger('file_size');
             $table->timestamps();
         });
     }
