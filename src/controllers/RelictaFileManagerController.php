@@ -62,4 +62,24 @@ class RelictaFileManagerController extends Controller
         return $iconClass;
     }
 
+    public function getFileSize(Request $request){
+        $fileID = $request->input('file_id');
+        $fileInfo = Archivo::where('file_id', $fileID)->first();
+        $fileSize = $fileInfo->file_size;
+        $fileSizeInKB = round($fileSize/1204,2);
+        $fileSizeInMB = round($fileSizeInKB/1024,2);
+        $fileSizeInGB =round($fileSizeInMB/1000,2);
+        if($fileSize >1024){
+            return $fileSize;
+        }elseif ($fileSizeInKB >1 && $fileSizeInKB <1024){
+            return  $fileSizeInKB;
+        }elseif ($fileSizeInMB > 1 && $fileSizeInMB < 1000){
+            return  $fileSizeInMB;
+        }else{
+            return  $fileSizeInGB;
+        }
+
+
+
+    }
 }
