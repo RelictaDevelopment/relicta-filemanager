@@ -23,20 +23,20 @@
         },
     },
     "scripts": {
-    "post-install-cmd": [
-        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-        "php artisan key:generate",
-        "php artisan migrate",
-        "php artisan vendor:publish --tag=laravel-assets",
-        "php artisan vendor:publish --tag=laravel-config",
-        "php artisan vendor:publish --tag=laravel-migrations",
-        "php artisan vendor:publish --tag=laravel-views",
-        "php artisan ui bootstrap --auth"
-    ],
-    "post-update-cmd": [
-        "php artisan migrate"
-    ]
-},
+        "post-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "php artisan key:generate",
+            "php artisan migrate",
+            "php artisan vendor:publish --tag=laravel-assets",
+            "php artisan vendor:publish --tag=laravel-config",
+            "php artisan vendor:publish --tag=laravel-migrations",
+            "php artisan vendor:publish --tag=laravel-views",
+            "php artisan ui bootstrap --auth"
+        ],
+        "post-update-cmd": [
+            "php artisan migrate"
+        ]
+    },
     "require": {
         "php": "8.*",
         "laravel/jetstream": "^2.4",
