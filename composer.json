@@ -39,7 +39,6 @@
     },
     "require": {
         "php": "8.*",
-        "laravel/jetstream": "^2.4",
         "laravel/ui": "^2.4",
         "laravel/jetstream-teams": "^1.3",
         "laravel/sanctum": "^2.10",
