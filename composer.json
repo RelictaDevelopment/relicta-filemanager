@@ -2,7 +2,7 @@
     "name": "relictadev/relicta-filemanager",
     "description": "Administrador de Archivos de desarrollo porpio de Relicta Development",
     "type": "library",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "license": "proprietary",
     "authors": [
         {
